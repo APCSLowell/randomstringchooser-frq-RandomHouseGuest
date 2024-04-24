@@ -2,7 +2,7 @@ import java.util.*;
 public class RandomStringChooser
 {
   private String[] words;
-  public RandomStringChoose(String [] string){
+  public RandomStringChooser(String [] string){
     words = string;
   }
   public String getNext(){
