@@ -1,10 +1,12 @@
 public class RandomLetterChooser extends RandomStringChooser
 {
-	
+	private String[] words;
 	public RandomLetterChooser(String str)
 	{ 
-		/* to be implemented in part (b) */
-		
+		words = new String[str.length()];
+		for(int i = 0; i < str.length(); i++){
+			words[i] = str.substring(i, i+1);
+		}
 	}
 	
 	
