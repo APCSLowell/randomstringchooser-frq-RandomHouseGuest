@@ -1,8 +1,17 @@
 import java.util.*;
 public class RandomStringChooser
 {
-  /* to be implemented in part (a) */
-  
-  //Heads up! 
-  //You will get a very confusing error message until you have working code in part b as well
+  private String[] words;
+  public RandomStringChoose(String [] string){
+    words = string;
+  }
+  public String getNext(){
+    int index = -1;
+    if(index >= words.length){
+      return "NONE";
+    } else{
+      index++;
+      return words[index];
+    }
+  }
 }
