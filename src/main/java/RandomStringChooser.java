@@ -1,18 +1,18 @@
 import java.util.*;
 public class RandomStringChooser
 {
-  private String[] words;
+  private ArrayList <String> words;
   public RandomStringChooser(String [] string){
-    words = new String[string.length];
-    words = string;
+    words = new ArrayList <String>();
+    for(int i = 0; i < string.length; i++){
+      words.add(string[i]);
+    }
   }
   public String getNext(){
-    int index = -1;
-    if(index >= words.length){
+    int index = (int)(Math.random()*words.length);
+    if(words.length == 0){
       return "NONE";
-    } else{
-      index++;
-      return words[index];
     }
+    return words.remove(index);
   }
 }
