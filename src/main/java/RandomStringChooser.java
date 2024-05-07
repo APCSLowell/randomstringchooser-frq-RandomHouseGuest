@@ -3,6 +3,7 @@ public class RandomStringChooser
 {
   private String[] words;
   public RandomStringChooser(String [] string){
+    words = new String[string.length];
     words = string;
   }
   public String getNext(){
