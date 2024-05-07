@@ -9,8 +9,8 @@ public class RandomStringChooser
     }
   }
   public String getNext(){
-    int index = (int)(Math.random()*words.length);
-    if(words.length == 0){
+    int index = (int)(Math.random()*words.size());
+    if(words.size() == 0){
       return "NONE";
     }
     return words.remove(index);
